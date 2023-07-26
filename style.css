@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'sidebar header' 
+                         'sidebar content';
+}
+.header{
+    display: grid;
+    grid-area: header;
+}
+.sidebar{
+    display: grid;
+    grid-area: sidebar;
+    padding-left: 25px;
+}
+.content{
+    display: grid;
+    grid-area: content;
+}
+.main-links{
+    display: grid;
+    gap: 0px;
+}
+.secondary-links{
+    display: grid;
+    gap: 0px;
+}
