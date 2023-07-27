@@ -63,15 +63,48 @@ a {
 .trending{
   grid-area: trending;
 }
-.search-container{
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   grid-area: search;
 }
-.profile-container{
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   grid-area: profile;
 }
-.welcome-container{
+.welcome-container {
   grid-area: welcome;
 }
-.button-container{
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
   grid-area: button;
+}
+button {
+  border-radius: 15px;
+  width: 100px;
+  height: 38px;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  background-color: #0284c7;
+}
+#search {
+  border-radius: 15px;
+  height: 25px;
+  width: 700px;
+  background-color: #cbd5e1;
+  border: 0;
+}
+.main-username {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.welcome {
+  font-weight: bold;
+  margin: 0;
 }
