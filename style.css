@@ -10,6 +10,9 @@ body {
   grid-template-areas:
     "sidebar header"
     "sidebar content";
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 .header {
   display: grid;
@@ -24,6 +27,7 @@ body {
   grid-area: sidebar;
   padding-left: 25px;
   background-color: #0284c7;
+  height: 100vh;
 }
 .content {
   display: grid;
@@ -56,6 +60,7 @@ a {
 }
 .projects{
   grid-area: projects;
+  margin-left: 20px;
 }
 .announcements{
   grid-area: announcements;
@@ -107,4 +112,55 @@ button {
 .welcome {
   font-weight: bold;
   margin: 0;
+}
+.post {
+  display: grid;
+  background-color: white;
+  margin: 15px;
+  margin-left: 0;
+  border-radius: 10px;
+  width: 350px;
+  height: 150px;
+}
+.posts {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.post p {
+  margin: 0;
+}
+.post h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.post h4, .post p {
+  margin-left: 10px;
+}
+.a-post {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.announcement{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+h5 {
+  margin-bottom: 0;
+}
+.free-space {
+  border: 1px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.user-container {
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.user {
+  display: flex;
 }
