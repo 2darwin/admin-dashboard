@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto&display=swap');
+
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   display: grid;
@@ -10,7 +13,11 @@ body {
 }
 .header {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "search search profile" "welcome welcome button";
   grid-area: header;
+  margin-left: 40px;
 }
 .sidebar {
   display: grid;
@@ -20,7 +27,11 @@ body {
 }
 .content {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "projects projects announcements" "projects projects trending" "projects projects trending";
   grid-area: content;
+  background-color: #cbd5e1;
 }
 .main-links,
 .secondary-links {
@@ -42,4 +53,25 @@ a {
   color: white;
   font-size: 26px;
   gap: 15px;
+}
+.projects{
+  grid-area: projects;
+}
+.announcements{
+  grid-area: announcements;
+}
+.trending{
+  grid-area: trending;
+}
+.search-container{
+  grid-area: search;
+}
+.profile-container{
+  grid-area: profile;
+}
+.welcome-container{
+  grid-area: welcome;
+}
+.button-container{
+  grid-area: button;
 }
