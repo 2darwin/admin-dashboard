@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto&display=swap");
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   display: grid;
@@ -10,9 +10,9 @@ body {
   grid-template-areas:
     "sidebar header"
     "sidebar content";
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .header {
   display: grid;
@@ -58,14 +58,14 @@ a {
   font-size: 26px;
   gap: 15px;
 }
-.projects{
+.projects {
   grid-area: projects;
   margin-left: 20px;
 }
-.announcements{
+.announcements {
   grid-area: announcements;
 }
-.trending{
+.trending {
   grid-area: trending;
 }
 .search-container {
@@ -134,7 +134,8 @@ button {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.post h4, .post p {
+.post h4,
+.post p {
   margin-left: 10px;
 }
 .a-post {
@@ -142,7 +143,7 @@ button {
   border-radius: 10px;
   margin-right: 20px;
 }
-.announcement{
+.announcement {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -160,7 +161,19 @@ h5 {
   background-color: white;
   border-radius: 10px;
   margin-right: 20px;
+  padding-top: 10px;
 }
 .user {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.user h6,
+.user p {
+  margin: 0;
+  font-size: 14px;
+}
+.user p {
+  margin-bottom: 10px;
 }
